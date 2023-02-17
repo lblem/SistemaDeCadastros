@@ -1,27 +1,92 @@
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> <!--link que chama a bliblioteca do Jquery-->
 <!DOCTYPE HTML>
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8">
-    <title>Menu Inicial</title>
-    <link rel="stylesheet" type="text/css"  href="StyleHomePage.css" />
-    <link rel="icon" href="gnc.png"> <!--icone da pagina-->
-</head>
+    <title>BLEM - Menu Inicial</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  </head>
 <body>
-<div class="container">
-<nav>
-  <ul class="menu">
-		<li><a href="#" class="btn_cadastro">Cadastro</a> <!--Botão de cadastro-->
-            <ul>
-                <li><a type="button" href="Cadastro_Cidades.html" class="btn_cadastro">Cidade</a></li> <!--Botão de cidade-->
-                <li><a type="button" href="Cadastro_Clientes.html" class="btn_cadastro">Cliente</a></li> <!--Botão de cliente-->
-             </ul>
-        </li>
-		<li><a href="#" class="btn_cadastro">Pedido</a></li> <!--Botão de pedido-->
-	  		<li><a href="#" class="btn_cadastro">Consulta</a></li> <!--Botão de consulta-->
-</ul>
-</nav> <!--Botao para sair da tela inicial, coloquei pra ir para o google que é o padrão quando abre o navegador-->
-<a href='https://www.google.com.br/'><button class="btn_fechar">Fechar</button></a>
+  <div class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-12">
+
+                <div class="navbar-header">
+                    <button class="navbar-toggle" data-target="#mobile_menu" data-toggle="collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+                    <a href="#" class="navbar-brand">BLEM</a>
+                </div>
+
+                <div class="navbar-collapse collapse" id="mobile_menu">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="#">Home</a></li>
+                        <li><a href="#" class="dropdown-toggle" data-toggle="dropdown">Cadastro <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Clientes</a></li>
+                                <li><a href="#">Unidades</a></li>
+                                <li><a href="#">Funcionários</a></li>
+                                <li><a href="#">Cargos</a></li>
+                                <li><a href="#" class="dropdown-toggle" data-toggle="dropdown">Relatórios<span class="caret"></span></a>
+                                <ul class="dropdown-rel">
+                                <li><a href="#">Relatório Geral de Clientes</a></li>
+                                <li><a href="#">Relatório Geral de Clientes</a></li>
+                                <li><a href="#">Relatório Geral de Clientes</a></li>
+                              </ul>
+                            </li>
+                              </ul>
+                        </li>
+                        <li><a href="#" class="dropdown-toggle" data-toggle="dropdown">Estoque <span class="caret"></span></a>
+                          <ul class="dropdown-menu">
+                          <li><a href="#">Produtos</a></li>
+                          <li><a href="#">Marcas</a></li>
+                          <li><a href="#">Fornecedores</a></li>
+                        </ul>
+                        </li>
+                        <li><a href="#" class="dropdown-toggle" data-toggle="dropdown">Financeiro<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                          <li><a href="#">Contas a Receber</a></li>
+                          <li><a href="#">Contas a Pagar</a></li>
+                          <li><a href="#">Boletos</a></li>
+                          <li><a href="#">Nota Fiscal Eletrônica - NFe</a></li>
+                        </ul>    
+                        </li>
+                        <li><a href="#">Faturamento</a></li>
+                        <li><a href="#" class="dropdown-toggle" data-toggle="dropdown">Configurações<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                          <li><a href="#">Usuários</a></li>
+                          <li><a href="#">Níveis de Usuário</a></li>
+                          <li><a href="#">Logos do Sistema</a></li>
+                          <li><a href="#">Avisos</a></li>
+                        </ul>
+                        </li>
+                    </ul>
+                    <ul class="nav navbar-nav">
+                        <li>
+                            <form action="" class="navbar-form">
+                                <div class="form-group">
+                                    <div class="input-group">
+                                        <input type="search" name="search" id="" placeholder="Pesquisar" class="form-control">
+                                        <span class="input-group-addon"><span class="glyphicon glyphicon-search"></span></span>
+                                    </div>
+                                </div>
+                            </form>
+                        </li>
+                    </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Usuário</a></li>
+                        <li><a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-log-in"></span> Login / Sair <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Configurações</a></li>
+                                <li><a href="#">Sair</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </body>
 </html>
